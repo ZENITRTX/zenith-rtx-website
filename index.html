@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH RTX Esports</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body {
+            background: #0b0c12;
+            color: #e0e6f6;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* Latar efek halus */
+        .bg-efek {
+            position: fixed; inset: 0; z-index: -1;
+            background: radial-gradient(circle at 20% 30%, rgba(40,120,220,0.12), transparent 55%),
+                        radial-gradient(circle at 80% 70%, rgba(30,170,220,0.08), transparent 55%);
+            animation: gerakLatar 14s ease-in-out infinite alternate;
+        }
+        @keyframes gerakLatar { from {transform:scale(1);} to {transform:scale(1.08);} }
+
+        header {
+            background: rgba(12,16,26,0.85);
+            backdrop-filter: blur(8px);
+            padding: 1.2rem;
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            box-shadow: 0 0 12px rgba(66,168,255,0.15);
+        }
+        header h1 { color:#4ec9ff; text-shadow:0 0 8px #2586cc; font-size:1.7rem; margin-bottom:.3rem; }
+        nav { margin-top:0.7rem; }
+        nav a {
+            color:#93c5fd; margin:0 0.7rem; text-decoration:none; font-weight:bold;
+            transition:0.3s;
+        }
+        nav a:hover { color:#4ec9ff; text-shadow:0 0 6px #4ec9ff; }
+
+        section {
+            max-width:920px; margin:1.8rem auto; padding:1.4rem;
+            background:rgba(22,27,40,0.65); border-radius:12px;
+            border:1px solid #244070; box-shadow:0 0 14px rgba(66,168,255,0.14);
+        }
+        h2 { color:#60a5fa; border-left:4px solid #38bdf8; padding-left:0.6rem; margin-bottom:1rem; }
+        .pusat { text-align:center; }
+
+        button {
+            background:#2563eb; color:white; border:none; padding:0.6rem 1.3rem; border-radius:8px;
+            font-weight:bold; cursor:pointer; transition:0.3s; box-shadow:0 0 8px rgba(59,130,246,0.25);
+            margin:.4rem;
+        }
+        button:hover { background:#1d4ed8; transform:scale(1.04); box-shadow:0 0 12px #3b82f670; }
+        .tombol-tipis { background:transparent; border:2px solid #38bdf8; color:#76d0ff; }
+        .tombol-tipis:hover { background:#1e3254; }
+
+        .grid-pemain { display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:.9rem; }
+        .grid-kecil { max-width:320px; margin:0 auto; }
+        .kartu-pemain {
+            background:rgba(28,38,60,0.7); padding:.8rem; border-radius:10px; text-align:center;
+            border:1px solid #2c4a7a; transition:0.35s;
+        }
+        .kartu-pemain:hover {
+            transform:translateY(-4px); border-color:#38bdf8;
+            box-shadow:0 0 12px rgba(56,189,248,0.22);
+        }
+        h3 { color:#76b9ff; margin:1.5rem 0 .8rem; text-align:center; }
+    </style>
+</head>
+<body>
+    <div class="bg-efek"></div>
+
+    <header>
+        <h1>🐺 ZENITH RTX</h1>
+        <p>ONE TEAM • ONE VISION • ONE ZENITH</p>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#roster">Pemain</a>
+            <a href="#jersey">👕 Jersey</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
+    <section id="home" class="pusat">
+        <h2>SELAMAT DATANG DI ZENITH RTX</h2>
+        <p>Tim Profesional Mobile Legends</p>
+        <div>
+            <button>BERGABUNG DENGAN KAMI</button>
+            <button class="tombol-tipis">LIHAT PEMAIN</button>
+        </div>
+    </section>
+
+    <section id="roster">
+        <h2>⭐ PEMAIN UTAMA</h2>
+        <div class="grid-pemain">
+            <div class="kartu-pemain"><strong>🛡️ APRI</strong><br><span>Penjaga • Kapten</span></div>
+            <div class="kartu-pemain"><strong>🏹 MIZU</strong><br><span>Jalur Emas</span></div>
+            <div class="kartu-pemain"><strong>✨ OCTA</strong><br><span>Jalur Tengah</span></div>
+            <div class="kartu-pemain"><strong>⚔️ CAIZ</strong><br><span>Jalur Penyerang</span></div>
+            <div class="kartu-pemain"><strong>🌿 AYYASY</strong><br><span>Pemburu Hutan</span></div>
+        </div>
+
+        <h3>🔄 CADANGAN</h3>
+        <div class="grid-pemain grid-kecil">
+            <div class="kartu-pemain">🏹 <strong>RICH</strong><br><span>Jalur Emas</span></div>
+            <div class="kartu-pemain">⚔️ <strong>AFRY</strong><br><span>Jalur Penyerang</span></div>
+        </div>
+    </section>
+
+    <section id="jersey">
+        <h2>👕 DESAIN JERSEY</h2>
+        <p style="text-align:center;max-width:600px;margin:auto;">
+            <strong>Versi Utama:</strong> Dasar hitam + aksen kilat biru menyala<br>
+            <strong>Versi Tamu:</strong> Dasar putih + pola kilat biru sama<br><br>
+            ✔️ Logo serigala & tulisan <strong>ZENITH RTX</strong><br>
+            ✔️ Siap jadi acuan cetak
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>📬 HUBUNGI KAMI</h2>
+        <p style="text-align:center;">Email: zenithrtx@email.com</p>
+    </section>
+
+</body>
+</html>
