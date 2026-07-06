@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH RTX • Jersey Tim</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #0b0c12; color: #e0e6f6; text-align: center; padding: 2rem; }
+        h1 { color: #4ec9ff; margin-bottom: 1.5rem; text-shadow: 0 0 8px #2586cc; }
+        .jersey-container {
+            max-width: 420px;
+            margin: 0 auto;
+            background: linear-gradient(140deg, #11141f 0%, #1b2233 100%);
+            border-radius: 18px;
+            padding: 2rem 1.2rem;
+            box-shadow: 0 0 22px rgba(62, 174, 242, 0.25);
+            border: 1px solid #29426b;
+            position: relative;
+            overflow: hidden;
+        }
+        .jersey-container::before {
+            content: "";
+            position: absolute;
+            top: -40%; left: -40%;
+            width: 180%; height: 180%;
+            background: conic-gradient(from 0deg, transparent, #2586cc33, transparent 25%);
+            animation: putar 7s linear infinite;
+            z-index: 0;
+        }
+        @keyframes putar { to { transform: rotate(360deg); } }
+        .isi { position: relative; z-index: 2; }
+        .logo { font-size: 2.3rem; font-weight: bold; color: #4ec9ff; letter-spacing: 2px; margin-bottom: .4rem; }
+        .slogan { font-size: 0.85rem; color: #89a0cb; margin-bottom: 1.4rem; }
+        .nama-pemain { font-size: 1.8rem; font-weight: bold; color: #ffffff; margin: .6rem 0; }
+        .posisi { background: #223558; display: inline-block; padding: .2rem .8rem; border-radius: 12px; font-size: .9rem; color: #76d0ff; margin-bottom: 1.5rem; }
+        .garis { height: 3px; background: linear-gradient(90deg, transparent, #2a8bdd, transparent); margin: 1rem 0; }
+        ul { list-style: none; font-size: .9rem; line-height: 1.6; color: #b0c4e8; }
+        .keterangan { margin-top: 2rem; font-size: .9rem; color: #7a89a8; }
+    </style>
+</head>
+<body>
+
+    <h1>👕 DESAIN JERSEY • ZENITH RTX</h1>
+
+    <div class="jersey-container">
+        <div class="isi">
+            <div class="logo">🐺 ZENITH RTX</div>
+            <div class="slogan">ONE TEAM • ONE VISION • ONE ZENITH</div>
+            <div class="garis"></div>
+
+            <div class="nama-pemain">APRI</div>
+            <div class="posisi">🛡️ ROAM • KAPTEN</div>
+
+            <div class="garis"></div>
+
+            <p style="font-size:.85rem; color:#94a7cc;">Contoh juga berlaku untuk seluruh anggota:</p>
+            <ul>
+                <li>🏹 MIZU — Jalur Emas</li>
+                <li>✨ OCTA — Jalur Tengah</li>
+                <li>⚔️ CAIZ — Jalur Penyerang</li>
+                <li>🌿 AYYASY — Penyerbu Hutan</li>
+                <li>🏹 RICH • ⚔️ AFRY — Cadangan</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="keterangan">
+        📌 Spesifikasi untuk dicetak: <br>
+        • Warna Dasar: Hitam pekat & Biru Gelap<br>
+        • Aksen: Biru Langit / Biru Bercahaya<br>
+        • Bahan: Jaring halus, nyaman, cepat kering
+    </div>
+
+    <br><a href="index.html" style="color:#4ec9ff; text-decoration:none;">← Kembali ke Halaman Utama Tim</a>
+
+</body>
+</html>
