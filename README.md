@@ -1,5 +1,5 @@
 # zenith-rtx-website
 Official website of ZENITH RTX Esports
 
-![image alt ] (https://github.com/user-attachments/assets/2474a6c5-2745-4b59-a5da-f9ef378fe5ea" />
+![image alt ] (https://github.com/ZENITRTX/zenith-rtx-website/blob/74ceb7f77e034611100a37a99b549c91c2397f9a/-Jersey%20ZENITH%20RTX-.jpg)
 
