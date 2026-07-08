@@ -60,3 +60,31 @@ button:hover { background:#1d4ed8; transform:scale(1.04); box‑shadow:0 0 1
     transform:translateY(‑4px); border‑color:#38bdf8;
     box‑shadow:0 0 12px rgba(56, 189, 248, 0.22);
 }
+.jersey-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:#0d1630;
+    border:2px solid #00bfff;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00bfff;
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
